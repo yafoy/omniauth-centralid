@@ -6,13 +6,13 @@ This gem contains the Central ID strategy for OmniAuth.
 
 First start by adding this gem to your Gemfile:
 
-```
+```ruby
 gem 'omniauth-centralid'
 ```
 
 Next, tell OmniAuth about this provider. For a Rails app, your config/initializers/omniauth.rb file should look like this:
 
-```
+```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :centralid, "API_KEY", "API_SECRET"
 end
