@@ -1,4 +1,5 @@
 # OmniAuth Central ID
+[![Build Status](https://semaphoreapp.com/api/v1/projects/a1479ff0-5ef6-4182-9577-116a668c090c/309883/badge.png)](https://semaphoreapp.com/olimart/omniauth-centralid)
 
 This gem contains the Central ID strategy for OmniAuth.
 
