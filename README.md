@@ -23,14 +23,14 @@ Replace "CENTRALID_KEY" and "CENTRALID_SECRET" with the appropriate values creat
 
 In your routes file
 
-```
+```ruby
 get 'auth/:provider/callback', to: 'oauths#create'
 get 'auth/failure',            to: 'oauths#failure' # optional (to override default redirect behaviour)
 ```
 
 Add controller (oauths_controller.rb as per defined in routes)
 
-```
+```ruby
   # sends the user on a trip to the provider,
   # and after authorizing there back to the callback url.
   def create
@@ -50,7 +50,7 @@ Add controller (oauths_controller.rb as per defined in routes)
 
 And finally add `create_with_omniauth` method in your user model.
 
-```
+```ruby
   private
 
   def self.create_with_omniauth(auth)
