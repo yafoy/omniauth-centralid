@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency 'multi_json', '~> 1.3'
-  s.add_runtime_dependency 'omniauth-oauth2', '~> 1.2.0', '>= 1.2.0'
+  s.add_dependency 'multi_json', '~> 1.12.1'
+  s.add_runtime_dependency 'omniauth-oauth2', '~> 1.4.0', '>= 1.4.0'
 end
