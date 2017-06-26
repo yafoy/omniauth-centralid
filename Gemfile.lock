@@ -1,9 +1,8 @@
 PATH
   remote: .
   specs:
-    omniauth-centralid (1.0.0)
-      multi_json (~> 1.12.1)
-      omniauth-oauth2 (~> 1.4.0, >= 1.4.0)
+    omniauth-centralid (1.1.0)
+      omniauth-oauth2 (= 1.3.1)
 
 GEM
   remote: https://rubygems.org/
@@ -68,7 +67,7 @@ GEM
     omniauth (1.4.2)
       hashie (>= 1.2, < 4)
       rack (>= 1.0, < 3)
-    omniauth-oauth2 (1.4.0)
+    omniauth-oauth2 (1.3.1)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
     rack (1.5.2)
