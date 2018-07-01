@@ -1,6 +1,5 @@
-$:.push File.expand_path("../lib", __FILE__)
-
-# Maintain your gem's version:
+lib = File.expand_path("../lib", __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "omniauth-centralid/version"
 
 # Describe your gem and declare its dependencies:
@@ -30,7 +29,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'omniauth-oauth2', '= 1.3.1'
 
   s.add_development_dependency "bundler", "~> 1.16"
-  s.add_development_dependency "rake", "~> 10.0"
+  s.add_development_dependency "rake"
   s.add_development_dependency "minitest", "~> 5.0"
   s.add_development_dependency "minitest-reporters", "~> 1.3"
 end
