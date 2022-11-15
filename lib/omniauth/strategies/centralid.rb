@@ -1,5 +1,5 @@
-require 'omniauth-oauth2'
-require 'multi_json'
+require "omniauth-oauth2"
+require "multi_json"
 
 module OmniAuth
   module Strategies
@@ -7,26 +7,26 @@ module OmniAuth
       option :name, :centralid
 
       option :client_options, {
-        site: 'https://centralid.herokuapp.com',
-        authorize_path: '/oauth/authorize'
+        site: "https://centralid.yafoy.com",
+        authorize_path: "/oauth/authorize"
       }
 
       option :fields, [:name, :email]
 
       uid do
-        raw_info['id']
+        raw_info["id"]
       end
 
       info do
         {
-          name: raw_info['full_name'],
-          email: raw_info['email'],
-          username: raw_info['username']
+          name: raw_info["full_name"],
+          email: raw_info["email"],
+          username: raw_info["username"]
         }
       end
 
       def raw_info
-        @raw_info ||= access_token.get('/api/v1/me').parsed
+        @raw_info ||= access_token.get("/api/v1/me").parsed
       end
 
       # https://github.com/intridea/omniauth-oauth2/issues/81

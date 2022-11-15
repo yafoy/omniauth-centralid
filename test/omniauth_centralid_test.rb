@@ -10,11 +10,11 @@ class OmniauthCentralidTest < Minitest::Test
   end
 
   def test_name_is_centralid
-    assert name, 'centralid'
+    assert name, "centralid"
   end
 
   def test_site_url_is_defined
-    assert :site, 'https://centralid.herokuapp.com'
+    assert :site, "https://centralid.yafoy.com"
   end
 
   def test_fields_are_defined
