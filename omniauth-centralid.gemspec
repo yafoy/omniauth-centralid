@@ -26,9 +26,9 @@ Gem::Specification.new do |s|
   # Pin omniauth-oauth2 since v1.4.0 removed the callback_url method
   # https://github.com/intridea/omniauth-oauth2/issues/93#issuecomment-227247801
   # https://github.com/WebTheoryLLC/omniauth-twitch/issues/3
-  s.add_runtime_dependency 'omniauth-oauth2', '~> 1.5', '>= 1.5.0'
+  s.add_runtime_dependency "omniauth-oauth2", "~> 1.5", ">= 1.5.0"
 
-  s.add_development_dependency "bundler", "~> 1.16"
+  s.add_development_dependency "bundler", "~> 2"
   s.add_development_dependency "rake"
   s.add_development_dependency "minitest", "~> 5.0"
   s.add_development_dependency "minitest-reporters", "~> 1.3"
